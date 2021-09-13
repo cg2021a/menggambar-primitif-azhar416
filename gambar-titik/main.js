@@ -15,7 +15,7 @@ function main() {
   
     var fragmentShaderCode = `
     void main() {
-      gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);
+      gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
     }
     `;
   
@@ -29,7 +29,7 @@ function main() {
     context.linkProgram(shaderProgram);
     context.useProgram(shaderProgram);
   
-    context.clearColor(1.0, 0.0, 0.0, 0.9);
+    context.clearColor(0.0, 0.0, 0.0, 0.0);
     context.clear(context.COLOR_BUFFER_BIT);
   
     context.drawArrays(context.POINTS, 0, 1);
